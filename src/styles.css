@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Slider */
+.swiper-pagination-bullet {
+  @apply w-10 lg:w-20 h-1 rounded-none;
+}
+
+.swiper-slide.swiper-slide-active {
+  width: 100% !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-brand-red;
+}
+
+/* Contact us */
+.form-input:focus~label,
+.form-input:not(:placeholder-shown)+label,
+textarea:focus~label,
+textarea:not(:placeholder-shown)+label {
+  background: white;
+  transform: scale(.9) translateY(-32px) translateX(2px);
+}
+
+/* change label when checked */
+.form-checkbox:checked+.label {
+  @apply font-bold text-brand-primary transition duration-200 ease-out;
+}

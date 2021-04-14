@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | McDain Group</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<style>
+
+</style>
+
+<body class="font-body">
+  <!-- Header -->
+  <header class="bg-brand-dark">
+    <!-- Desktop Menu -->
+    <nav class="desktop-nav max-w-screen-lg xl:max-w-screen-xl hidden lg:flex px-4 sm:px-8 pt-4 mx-auto">
+      <a href="index.html" class="block">
+        <img src="./assets/logo.svg" alt="">
+      </a>
+      <div class="w-full flex flex-col space-y-4">
+        <div class="top-actions flex items-center space-x-3">
+          <div class="relative text-brand-text-gray border border-brand-text-gray ml-auto">
+            <select
+              class="text-xs font-extrabold uppercase appearance-none focus:outline-none bg-transparent cursor-pointer px-8 py-3">
+              <option value="">choose region</option>
+              <option value="london">london</option>
+              <option value="england">england</option>
+              <option value="scotland">scotland</option>
+            </select>
+            <div class="icon-globe absolute top-1/2 left-2 transform -translate-y-1/2 pointer-events-none">
+              <img src="./assets/icons/globe.svg" alt="">
+            </div>
+            <div class="icon-arrow absolute top-1/2 right-2 transform -translate-y-1/2 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
+                <path d="M8 1.5L4.5 5.5L1 1.5" stroke="#939393" stroke-width="2" />
+              </svg>
+            </div>
+          </div>
+          <a href="#"
+            class="block text-xs font-extrabold text-center bg-brand-gray text-brand-primary uppercase py-3 px-5">live
+            chat</a>
+          <a href="#"
+            class="block text-xs font-extrabold text-center bg-brand-red hover:bg-red-700 text-white uppercase py-3 px-12">for
+            hire</a>
+        </div>
+        <ul class="flex items-center text-white ml-auto">
+          <li>
+            <div class="group relative">
+              <a href="./groundworks.html"
+                class="text-sm font-extrabold text-brand-secondary hover:text-brand-primary hover:bg-white flex items-center transition duration-200 ease-in-out uppercase px-5 py-4">
+                groundworks
+                <span class="ml-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 7 9" fill="none">
+                    <path d="M1 1L5 4.5L1 8" stroke="#B11E23" stroke-width="2" />
+                  </svg>
+                </span>
+              </a>
+              <div
+                class="w-full font-bold text-xs hidden absolute text-brand-primary shadow-md z-40  group-hover:block pt-1">
+                <a class="block bg-white hover:bg-gray-100 py-2 px-5" href="#">Diggers</a>
+                <a class="block bg-white hover:bg-gray-100 py-2 px-5" href="#">Grab
+                  Lorry's</a>
+                <a class="block bg-white hover:bg-gray-100 py-2 px-5" href="#">Mixer
+                  Lorry's</a>
+                <a class="block bg-white hover:bg-gray-100 py-2 px-5" href="#">Tipper Lorry's</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="group relative">
+              <a href="./machinery.html"
+                class="text-sm font-extrabold text-brand-secondary hover:text-brand-primary hover:bg-white flex items-center transition duration-200 ease-in-out uppercase px-5 py-4">
+                Machinery Hire
+                <span class="ml-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 7 9" fill="none">
+                    <path d="M1 1L5 4.5L1 8" stroke="#B11E23" stroke-width="2" />
+                  </svg>
+                </span>
+              </a>
+              <div
+                class="w-full font-bold text-xs hidden absolute  text-brand-primary shadow-md z-40  group-hover:block pt-1">
+                <a class="block bg-white hover:bg-gray-100 py-2 px-5" href="#">Diggers</a>
+                <a class="block bg-white hover:bg-gray-100 py-2 px-5" href="#">Grab
+                  Lorry's</a>
+                <a class="block bg-white hover:bg-gray-100 py-2 px-5" href="#">Mixer
+                  Lorry's</a>
+                <a class="block bg-white hover:bg-gray-100 py-2 px-5" href="#">Tipper Lorry's</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="group relative">
+              <a href="./demolition.html"
+                class="text-sm font-extrabold text-brand-secondary hover:text-brand-primary hover:bg-white flex items-center transition duration-200 ease-in-out uppercase px-5 py-4">
+                Demolition
+                <span class="ml-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 7 9" fill="none">
+                    <path d="M1 1L5 4.5L1 8" stroke="#B11E23" stroke-width="2" />
+                  </svg>
+                </span>
+              </a>
+
+              <div
+                class="w-full font-bold text-xs hidden absolute  text-brand-primary shadow-md z-40  group-hover:block pt-1">
+                <a class="block bg-white hover:bg-gray-100 py-2 px-5" href="./site-clearance.html">Site Clearance</a>
+                <a class="block bg-white hover:bg-gray-100 py-2 px-5" href="./site-crushing.html">Strip Crushing</a>
+                <a class="block bg-white hover:bg-gray-100 py-2 px-5" href="./strip-out.html">Strip Out</a>
+                <a class="block bg-white hover:bg-gray-100 py-2 px-5" href="./bulk-excavation.html">Structural
+                  Alterations</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="./coverage-area.html"
+              class="text-sm font-extrabold text-brand-secondary hover:text-brand-primary hover:bg-white flex items-center transition duration-200 ease-in-out uppercase px-5 py-4">coverage</a>
+          </li>
+          <li>
+            <div class="relative search-container">
+              <button type="button" class="search-btn group block focus:outline-none px-3 py-3 hover:bg-white">
+                <svg class="text-white group-hover:text-brand-primary pointer-events-none"
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M14 14L11.1 11.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+
+              <form class="w-[19rem] absolute right-0 mt-0.5 shadow hidden z-20">
+                <input class="w-full text-sm text-brand-primary p-3 focus:outline-none" type="text"
+                  placeholder="Search...">
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End -->
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-nav max-w-screen-lg px-4 sm:px-8 mx-auto lg:hidden">
+      <div class="h-16 flex items-center justify-between border-b border-brand-red -mx-4 px-4">
+        <a href="" class="block">
+          <img class="w-36 h-12 max-w-none" src="./assets/logo.svg" alt="">
+        </a>
+        <a href="#"
+          class="block text-xs font-extrabold text-center bg-brand-gray text-brand-primary uppercase py-1.5 px-5 ml-auto">live
+          chat</a>
+        <button class="toggle-button block focus:outline-none ml-4">
+          <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="mobile-content w-full max-h-0 bg-brand-dark absolute left-0 right-0 transition-[height] duration-300 ease-in-out overflow-hidden z-30 px-4">
+        <div class="top-actions flex items-center space-x-3 pt-4">
+          <div class="relative text-brand-text-gray border border-brand-text-gray">
+            <select
+              class="text-xs font-extrabold uppercase appearance-none focus:outline-none bg-transparent cursor-pointer px-6 py-2">
+              <option value="">choose region</option>
+              <option value="london">london</option>
+              <option value="england">england</option>
+              <option value="scotland">scotland</option>
+            </select>
+            <div class="icon-globe absolute top-1/2 left-2 transform -translate-y-1/2 pointer-events-none">
+              <img src="./assets/icons/globe.svg" alt="">
+            </div>
+            <div class="icon-arrow absolute top-1/2 right-2 transform -translate-y-1/2 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
+                <path d="M8 1.5L4.5 5.5L1 1.5" stroke="#939393" stroke-width="2" />
+              </svg>
+            </div>
+          </div>
+
+          <a href="#"
+            class="block text-xs font-extrabold text-center bg-brand-red hover:bg-red-700 text-white uppercase py-2 px-6">for
+            hire</a>
+        </div>
+
+        <!-- Mobile nav -->
+        <ul class="mobile-navbar text-white py-6">
+          <li>
+            <button type="button"
+              class="w-full text-xs font-extrabold text-brand-secondary hover:bg-white hover:bg-opacity-10 flex items-center transition duration-200 ease-in-out focus:outline-none uppercase py-2 pl-2">
+              groundworks
+              <span class="ml-auto pr-3">
+                <svg class="pointer-events-none transition-transform duration-200 ease-in"
+                  xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 7 9" fill="none">
+                  <path d="M1 1L5 4.5L1 8" stroke="#B11E23" stroke-width="2" />
+                </svg>
+              </span>
+            </button>
+            <div
+              class="w-full h-0 font-bold text-sm text-brand-secondary bg-white bg-opacity-10 text-brand-primary transition-[height] duration-200 ease-in overflow-hidden px-4">
+              <div class="py-2">
+                <a class="block hover:bg-black hover:bg-opacity-25 p-2" href="#">Diggers</a>
+                <a class="block hover:bg-black hover:bg-opacity-25 p-2" href="#">Grab
+                  Lorry's</a>
+                <a class="block hover:bg-black hover:bg-opacity-25 p-2" href="#">Mixer
+                  Lorry's</a>
+                <a class="block hover:bg-black hover:bg-opacity-25 p-2" href="#">Tipper Lorry's</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button type="button"
+              class="w-full text-xs font-extrabold text-brand-secondary hover:bg-white hover:bg-opacity-10 flex items-center transition duration-200 ease-in-out focus:outline-none uppercase py-2 pl-2">
+              Machinery Hire
+              <span class="ml-auto pr-3">
+                <svg class="pointer-events-none transition-transform duration-200 ease-in"
+                  xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 7 9" fill="none">
+                  <path d="M1 1L5 4.5L1 8" stroke="#B11E23" stroke-width="2" />
+                </svg>
+              </span>
+            </button>
+            <div
+              class="w-full h-0 font-bold text-sm text-brand-secondary bg-white bg-opacity-10 text-brand-primary transition-[height] duration-200 ease-in overflow-hidden px-4">
+              <div class="py-2">
+                <a class="block hover:bg-black hover:bg-opacity-25 p-2" href="#">Diggers</a>
+                <a class="block hover:bg-black hover:bg-opacity-25 p-2" href="#">Grab
+                  Lorry's</a>
+                <a class="block hover:bg-black hover:bg-opacity-25 p-2" href="#">Mixer
+                  Lorry's</a>
+                <a class="block hover:bg-black hover:bg-opacity-25 p-2" href="#">Tipper Lorry's</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button type="button"
+              class="w-full text-xs font-extrabold text-brand-secondary hover:bg-white hover:bg-opacity-10 flex items-center transition duration-200 ease-in-out focus:outline-none uppercase py-2 pl-2">
+              Demolition
+              <span class="ml-auto pr-3">
+                <svg class="pointer-events-none transition-transform duration-200 ease-in"
+                  xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 7 9" fill="none">
+                  <path d="M1 1L5 4.5L1 8" stroke="#B11E23" stroke-width="2" />
+                </svg>
+              </span>
+            </button>
+            <div
+              class="w-full h-0 font-bold text-sm text-brand-secondary bg-white bg-opacity-10 text-brand-primary transition-[height] duration-200 ease-in overflow-hidden px-4">
+              <div class="py-2">
+                <a class="block hover:bg-black hover:bg-opacity-25 p-2" href="./site-clearance.html">Site Clearance</a>
+                <a class="block hover:bg-black hover:bg-opacity-25 p-2" href="./site-crushing.html">Strip Crushing</a>
+                <a class="block hover:bg-black hover:bg-opacity-25 p-2" href="./strip-out.html">Strip Out</a>
+                <a class="block hover:bg-black hover:bg-opacity-25 p-2" href="./bulk-excavation.html">Structural
+                  Alterations</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="./coverage-area.html"
+              class="w-full text-xs font-extrabold text-brand-secondary hover:bg-white hover:bg-opacity-10 flex items-center transition duration-200 ease-in-out focus:outline-none uppercase py-2 pl-2">
+              coverage
+              <span class="ml-auto pr-3">
+                <svg class="pointer-events-none transition-transform duration-200 ease-in"
+                  xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 7 9" fill="none">
+                  <path d="M1 1L5 4.5L1 8" stroke="#B11E23" stroke-width="2" />
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <form class="w-full relative pb-3">
+          <input class="w-full text-sm text-brand-primary p-2 px-3 focus:outline-none" type="text"
+            placeholder="Search...">
+          <button type="button" class="mobile-search-btn block focus:outline-none absolute top-0 right-0 p-2.5 ">
+            <svg class="text-brand-text-dark pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14 14L11.1 11.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <!-- Hero -->
+  <div class="hero swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <div class="swiper-slide relative">
+        <div class="slider-image">
+          <img class="w-full" src="./assets/sliders/slider-1.png" alt="">
+        </div>
+        <div
+          class="cta w-full absolute text-white top-1/2 md:top-20 lg:top-40 left-1/2 transform -translate-y-1/2 md:-translate-y-0 -translate-x-1/2">
+          <div class="hero-heading w-full text-center">
+            <h2 class="text-4xl md:text-6xl lg:text-8xl font-extrabold italic tracking-tighter leading-normal">
+              Groundworks</h2>
+            <h4 class="lg:text-4xl font-extrabold uppercase leading-normal">We got you covered</h4>
+            <p class="text-sm lg:text-lg leading-normal">Our special equipment at the best prices.</p>
+          </div>
+          <div class="hidden md:flex justify-center space-x-9 lg:space-x-20 md:pt-20 lg:pt-48">
+            <div class="flex flex-col bg-black bg-opacity-40 px-6 py-3 pb-0">
+              <h2 class="text-lg font-extrabold uppercase leading-loose">Need help on a Project</h2>
+              <p class="pt-1 pb-9">All our clients get expert help and guidance.</p>
+              <a href=" #"
+                class="inline-block text-xs font-extrabold text-center bg-brand-red hover:bg-red-700 text-white uppercase py-3 px-8 ml-auto -mr-6">
+                contact us</a>
+            </div>
+            <div class="flex flex-col bg-black bg-opacity-40 px-6 py-3 pb-0">
+              <h2 class="text-lg font-extrabold uppercase leading-loose">Need help on a Project</h2>
+              <p class="pt-1 pb-9">All our clients get expert help and guidance.</p>
+              <a href=" #"
+                class="inline-block text-xs font-extrabold text-center bg-brand-red hover:bg-red-700 text-white uppercase py-3 px-8 ml-auto -mr-6">
+                for
+                hire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide relative">
+        <div class="slider-image">
+          <img class="w-full" src="./assets/sliders/slider-2.png" alt="">
+        </div>
+        <div
+          class="cta w-full absolute text-white top-1/2 md:top-20 lg:top-40 left-1/2 transform -translate-y-1/2 md:-translate-y-0 -translate-x-1/2">
+          <div class="hero-heading w-full text-center">
+            <h2 class="text-4xl md:text-6xl lg:text-8xl font-extrabold italic tracking-tighter leading-normal">
+              Machinery Hire</h2>
+            <h4 class="lg:text-4xl font-extrabold uppercase leading-normal">We got you covered</h4>
+            <p class="text-sm lg:text-lg leading-normal">Our special equipment at the best prices.</p>
+          </div>
+          <div class="hidden md:flex justify-center space-x-9 lg:space-x-20 md:pt-16 xl:pt-48">
+            <div class="flex flex-col bg-black bg-opacity-40 px-6 py-3 pb-0">
+              <h2 class="text-lg font-extrabold uppercase leading-loose">Need help on a Project</h2>
+              <p class="pt-1 pb-9">All our clients get expert help and guidance.</p>
+              <a href=" #"
+                class="inline-block text-xs font-extrabold text-center bg-brand-red hover:bg-red-700 text-white uppercase py-3 px-8 ml-auto -mr-6">
+                contact us</a>
+            </div>
+            <div class="flex flex-col bg-black bg-opacity-40 px-6 py-3 pb-0">
+              <h2 class="text-lg font-extrabold uppercase leading-loose">Need help on a Project</h2>
+              <p class="pt-1 pb-9">All our clients get expert help and guidance.</p>
+              <a href=" #"
+                class="inline-block text-xs font-extrabold text-center bg-brand-red hover:bg-red-700 text-white uppercase py-3 px-8 ml-auto -mr-6">
+                for
+                hire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide relative">
+        <div class="slider-image">
+          <img class="w-full" src="./assets/sliders/slider-3.png" alt="">
+        </div>
+        <div
+          class="cta w-full absolute text-white top-1/2 md:top-20 lg:top-40 left-1/2 transform -translate-y-1/2 md:-translate-y-0 -translate-x-1/2">
+          <div class="hero-heading w-full text-center">
+            <h2 class="text-4xl md:text-6xl lg:text-8xl font-extrabold italic tracking-tighter leading-normal">
+              Demolition</h2>
+            <h4 class="lg:text-4xl font-extrabold uppercase leading-normal">We got you covered</h4>
+            <p class="text-sm lg:text-lg leading-normal">Our special equipment at the best prices.</p>
+          </div>
+          <div class="hidden md:flex justify-center space-x-9 lg:space-x-20 md:pt-16 xl:pt-48">
+            <div class="flex flex-col bg-black bg-opacity-40 px-6 py-3 pb-0">
+              <h2 class="text-lg font-extrabold uppercase leading-loose">Need help on a Project</h2>
+              <p class="pt-1 pb-9">All our clients get expert help and guidance.</p>
+              <a href=" #"
+                class="inline-block text-xs font-extrabold text-center bg-brand-red hover:bg-red-700 text-white uppercase py-3 px-8 ml-auto -mr-6">
+                contact us</a>
+            </div>
+            <div class="flex flex-col bg-black bg-opacity-40 px-6 py-3 pb-0">
+              <h2 class="text-lg font-extrabold uppercase leading-loose">Need help on a Project</h2>
+              <p class="pt-1 pb-9">All our clients get expert help and guidance.</p>
+              <a href=" #"
+                class="inline-block text-xs font-extrabold text-center bg-brand-red hover:bg-red-700 text-white uppercase py-3 px-8 ml-auto -mr-6">
+                for
+                hire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="button-prev absolute top-[33%] left-4 md:left-8 xl:left-20 z-10">
+      <svg class="w-3 lg:w-6" xmlns="http://www.w3.org/2000/svg" width="30" height="49" viewBox="0 0 30 49" fill="none">
+        <path d="M29 48L2 24.5L29 0.999998" stroke="white" stroke-width="2" />
+      </svg>
+    </div>
+    <div class="button-next absolute top-[33%] right-4 md:right-8 xl:right-20 z-10">
+      <svg class="w-3 lg:w-6" xmlns="http://www.w3.org/2000/svg" width="30" height="49" viewBox="0 0 30 49" fill="none">
+        <path d="M1 1L28 24.5L1 48" stroke="white" stroke-width="2" />
+      </svg>
+    </div>
+
+
+  </div>
+
+  <!-- Main Content -->
+  <main class="max-w-screen-lg xl:max-w-screen-xl text-brand-primary px-4 sm:px-8 mx-auto">
+    <!-- Hiring the right man & machine -->
+    <div class="hiring-man-machine py-6">
+      <div class="text-center py-4">
+        <h2 class="text-3xl font-extrabold uppercase">hiring the right man & machine</h2>
+        <p>Taking man and machine to the next level</p>
+      </div>
+      <div class="filter uppercase text-sm py-10">
+        <h1 class="w-1/2 md:w-28 font-extrabold text-xs text-center bg-brand-gray py-3">filter</h1>
+        <div class="flex flex-wrap bg-brand-gray p-4 md:p-6 pb-4 space-y-3 md:space-y-0 md:space-x-4">
+          <div class="w-full md:flex-1 relative">
+            <select name="" id=""
+              class="w-full text-xs font-semibold text-gray-500 uppercase outline-none appearance-none p-3">
+              <option value="">machine, equipment</option>
+              <option value="">machine, equipment</option>
+              <option value="">machine, equipment</option>
+            </select>
+            <div class="icon-wrap absolute top-1/2 right-4 transform -translate-y-1/2 pointer-events-none">
+              <svg width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="w-full md:flex-1 relative">
+            <select name="" id=""
+              class="w-full text-xs font-semibold text-gray-500 uppercase outline-none appearance-none p-3">
+              <option value="">work type</option>
+              <option value="">work type</option>
+              <option value="">work type</option>
+            </select>
+            <div class="icon-wrap absolute top-1/2 right-4 transform -translate-y-1/2 pointer-events-none">
+              <svg width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+          <a href="#"
+            class="w-full md:w-auto inline-block text-xs font-extrabold text-center bg-brand-red hover:bg-red-700 text-white uppercase py-3 px-9">find</a>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div class="card">
+          <div class="card-image overflow-hidden">
+            <img class="w-full object-cover transform hover:scale-105 transition ease-in-out duration-500"
+              src="./assets/images/card-1.png" alt="">
+          </div>
+          <div class="card-title text-center bg-brand-gray py-6">
+            <a href="#" class="block hover:underline">
+              <h4 class="font-extrabold uppercase">machinery hire</h4>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image overflow-hidden">
+            <img class="w-full object-cover transform hover:scale-105 transition ease-in-out duration-500"
+              src="./assets/images/card-2.png" alt="">
+          </div>
+          <div class="card-title text-center bg-brand-gray py-6">
+            <a href="#" class="block hover:underline">
+              <h4 class="font-extrabold uppercase">machinery hire</h4>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image overflow-hidden">
+            <img class="w-full object-cover transform hover:scale-105 transition ease-in-out duration-500"
+              src="./assets/images/card-3.png" alt="">
+          </div>
+          <div class="card-title text-center bg-brand-gray py-6">
+            <a href="#" class="block hover:underline">
+              <h4 class="font-extrabold uppercase">machinery hire</h4>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image overflow-hidden">
+            <img class="w-full object-cover transform hover:scale-105 transition ease-in-out duration-500"
+              src="./assets/images/card-7.png" alt="">
+          </div>
+          <div class="card-title text-center bg-brand-gray py-6">
+            <a href="#" class="block hover:underline">
+              <h4 class="font-extrabold uppercase">machinery hire</h4>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image overflow-hidden">
+            <img class="w-full object-cover transform hover:scale-105 transition ease-in-out duration-500"
+              src="./assets/images/card-8.png" alt="">
+          </div>
+          <div class="card-title text-center bg-brand-gray py-6">
+            <a href="#" class="block hover:underline">
+              <h4 class="font-extrabold uppercase">machinery hire</h4>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image overflow-hidden">
+            <img class="w-full object-cover transform hover:scale-105 transition ease-in-out duration-500"
+              src="./assets/images/machine-3.png" alt="">
+          </div>
+          <div class="card-title text-center bg-brand-gray py-6">
+            <a href="#" class="block hover:underline">
+              <h4 class="font-extrabold uppercase">machinery hire</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+    <!-- Our Work -->
+    <div class="our-work py-6">
+      <div class="section-heading text-center pt-6">
+        <h1 class="text-2xl font-extrabold uppercase">our work</h1>
+        <p>Through years our equipment has shown reliability under any conditions.</p>
+      </div>
+
+      <div class="flex flex-wrap justify-center -mx-4 md:-mx-5 py-3">
+        <div class="card w-full md:w-1/2 p-5">
+          <div class="card-image overflow-hidden">
+            <img class="w-full h-60 object-cover transform hover:scale-105 transition ease-in-out duration-500"
+              src="./assets/images/driver.png" alt="">
+          </div>
+          <div class="card-title py-3">
+            <h4 class="font-bold uppercase">CAREER OPPORTUNITIES</h4>
+            <p class="text-sm leading-5 py-2">This fabulous Spanish villa and apartment with its secure gated entrance
+              caters
+              for all
+              types of holidays
+              - Families, large groups and corporate weekends. The property is ren
+            </p>
+            <div class="block md:inline-block bg-brand-gray hover:bg-brand-red mt-4">
+              <a class="flex items-center justify-between font-extrabold text-xs hover:text-white uppercase py-3 px-5"
+                href="#">find out
+                more
+                <span class="pl-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                    <path d="M1 1L5 4.5L1 8" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full md:w-1/2 p-5">
+          <div class="card-image overflow-hidden">
+            <img class="w-full h-60 object-cover transform hover:scale-105 transition ease-in-out duration-500"
+              src="./assets/images/map.png" alt="">
+          </div>
+          <div class="card-title py-3">
+            <h4 class="font-bold uppercase">area coverage</h4>
+            <p class="text-sm leading-5 py-2">This fabulous Spanish villa and apartment with its secure gated entrance
+              caters
+              for all
+              types of holidays
+              - Families, large groups and corporate weekends. The property is ren
+            </p>
+            <div class="block md:inline-block bg-brand-gray hover:bg-brand-red mt-4">
+              <a class="flex items-center justify-between font-extrabold text-xs hover:text-white uppercase py-3 px-5"
+                href="#">find out
+                more
+                <span class="pl-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                    <path d="M1 1L5 4.5L1 8" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+    <!-- Our blog -->
+    <div class="our-blog py-6">
+      <div class="section-heading text-center">
+        <a href="./blogs.html" class="block">
+          <h1 class="text-2xl font-extrabold uppercase">our blog</h1>
+        </a>
+        <p>Find our latest news and offers.</p>
+      </div>
+
+      <div class="flex flex-wrap justify-center -mx-4 md:-mx-5 py-3">
+        <div class="card w-full md:w-1/2 p-5">
+          <div class="card-image overflow-hidden">
+            <img class="w-full h-60 object-cover transform hover:scale-105 transition ease-in-out duration-500"
+              src="./assets/images/work-1.png" alt="">
+          </div>
+          <div class="card-title py-3">
+            <h4 class="font-bold uppercase">Why hire machinery in london</h4>
+            <p class="text-sm leading-5 py-2">This fabulous Spanish villa and apartment with its secure gated entrance
+              caters
+              for all
+              types of holidays
+              - Families, large groups and corporate weekends. The property is ren
+            </p>
+            <div class="block md:inline-block bg-brand-gray hover:bg-brand-red mt-4">
+              <a class="flex items-center justify-between font-extrabold text-xs hover:text-white uppercase py-3 px-5"
+                href="#">read story
+                <span class="pl-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                    <path d="M1 1L5 4.5L1 8" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full md:w-1/2 p-5">
+          <div class="card-image overflow-hidden">
+            <img class="w-full h-60 object-cover transform hover:scale-105 transition ease-in-out duration-500"
+              src="./assets/images/blog.png" alt="">
+          </div>
+          <div class="card-title py-3">
+            <h4 class="font-bold uppercase">Mixer hire onsite in london</h4>
+            <p class="text-sm leading-5 py-2">This fabulous Spanish villa and apartment with its secure gated entrance
+              caters
+              for all
+              types of holidays
+              - Families, large groups and corporate weekends. The property is ren
+            </p>
+            <div class="block md:inline-block bg-brand-gray hover:bg-brand-red mt-4">
+              <a class="flex items-center justify-between font-extrabold text-xs hover:text-white uppercase py-3 px-5"
+                href="#">read story
+                <span class="pl-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                    <path d="M1 1L5 4.5L1 8" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="load-more text-right -mt-3">
+        <div class="block md:inline-block bg-brand-gray hover:bg-brand-red">
+          <a class="flex items-center justify-between font-extrabold text-sm hover:text-white py-2 px-5" href="#">Load
+            more
+            <span class="pl-7">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                <path d="M1 1L5 4.5L1 8" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+    <!-- Contact Us -->
+    <div class="contact-us py-6">
+      <div class="section-heading text-center">
+        <h1 class="text-2xl font-extrabold uppercase">contact us</h1>
+        <p>By expanding our services, our coverage grows.</p>
+      </div>
+      <div class="locations text-[15px] mt-8">
+        <h1 class="w-1/2 md:w-28 font-extrabold text-xs text-center bg-brand-gray uppercase py-3">location</h1>
+        <div class="flex flex-wrap bg-brand-gray py-4 px-2">
+          <div class="w-full md:w-1/2 lg:w-1/3 p-2 py-3 lg:p-7">
+            <div class="bg-white h-full flex flex-col justify-between px-7 py-4 space-y-6">
+              <h3 class="uppercase text-lg">london</h3>
+              <div>
+                <p class="text-blue-400">Unit 1 Station Approach, off Oldfield Lane, <br>
+                  North Greenford Middlesex, UB6 0AL
+                </p>
+                <p>Monday-Friday 8am-5pm</p>
+              </div>
+              <p class="">Phone: <span class="text-blue-400">020-8578-0507</span></p>
+              <div class="w-full md:w-40 py-4">
+                <a class="bg-brand-red hover:bg-red-700 flex items-center justify-between font-extrabold text-white text-xs uppercase py-3.5 px-5"
+                  href="#">map
+                  link
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                      <path d="M1 1L5 4.5L1 8" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 p-2 py-3 lg:p-7">
+            <div class="bg-white h-full flex flex-col justify-between px-7 py-4 space-y-6">
+              <h3 class="uppercase text-lg">Ireland</h3>
+              <div>
+                <p class="text-blue-400">Terryone, Moville, Co. Donegal, <br>
+                  Ireland, F93X07V
+                </p>
+                <p>Monday-Friday 8am-5pm</p>
+              </div>
+              <p class="">Phone: <span class="text-blue-400">028-9032-8878</span></p>
+              <div class="w-full md:w-40 py-4">
+                <a class="bg-brand-red hover:bg-red-700 flex items-center justify-between font-extrabold text-white text-xs uppercase py-3.5 px-5"
+                  href="#">map
+                  link
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                      <path d="M1 1L5 4.5L1 8" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 p-2 py-3 lg:p-7">
+            <div class="bg-white h-full flex flex-col justify-between px-7 py-4 space-y-6">
+              <h3 class="uppercase text-lg">Northern Ireland</h3>
+              <div>
+                <p class="text-blue-400">7 Elagh Business Park, Derry City, <br>
+                  Northern Ireland, BT488QH
+                </p>
+                <p>Monday-Friday 8am-5pm</p>
+              </div>
+              <p class="">Phone: <span class="text-blue-400">020-8578-0507</span></p>
+              <div class="w-full md:w-40 py-4">
+                <a class="bg-brand-red hover:bg-red-700 flex items-center justify-between font-extrabold text-white text-xs uppercase py-3.5 px-5"
+                  href="#">map
+                  link
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9" fill="none">
+                      <path d="M1 1L5 4.5L1 8" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- End Main Content -->
+
+  <footer class="bg-brand-primary">
+    <div class="max-w-screen-lg xl:max-w-screen-xl px-4 sm:px-8 mx-auto">
+      <div class="flex flex-wrap text-sm text-brand-text-gray py-4 pb-6">
+        <div class="footer-logo w-full lg:w-1/3 py-6">
+          <a class="block" href="index.html">
+            <img class="w-40" src="./assets/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 lg:w-1/5 py-6">
+          <h4 class="text-brand-secondary font-extrabold uppercase pb-2">Groundworks</h4>
+          <div class="footer-link space-y-2">
+            <a href="#" class="block hover:text-white hover:underline">Diggers</a>
+            <a href="#" class="block hover:text-white hover:underline">Grab Lorry’s</a>
+            <a href="#" class="block hover:text-white hover:underline">Mixer Lorry’s</a>
+            <a href="#" class="block hover:text-white hover:underline">Tipper Lorry’s</a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 lg:w-1/5 py-6">
+          <h4 class="text-brand-secondary font-extrabold uppercase pb-2">Machinery Hire</h4>
+          <div class="footer-link space-y-2">
+            <a href="#" class="block hover:text-white hover:underline">Concrete Pump Hire</a>
+            <a href="#" class="block hover:text-white hover:underline">Crushers Hire</a>
+            <a href="#" class="block hover:text-white hover:underline">Digger Hire</a>
+            <a href="#" class="block hover:text-white hover:underline">Hiab lorries Hire</a>
+            <a href="#" class="block hover:text-white hover:underline">Low loaders Hire</a>
+            <a href="#" class="block hover:text-white hover:underline">Mixer Hire</a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 lg:w-1/5 py-6">
+          <h4 class="text-brand-secondary font-extrabold uppercase pb-2">Demolition</h4>
+          <div class="footer-link space-y-2">
+            <a href="#" class="block hover:text-white hover:underline">Site Clearance</a>
+            <a href="#" class="block hover:text-white hover:underline">Site Crushing</a>
+            <a href="#" class="block hover:text-white hover:underline">Strip Out</a>
+            <a href="#" class="block hover:text-white hover:underline">Structural Alterations</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
